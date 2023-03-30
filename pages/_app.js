@@ -27,18 +27,18 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
         <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        strategy="beforeInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-KPZSDZ0B89`}
         />
         <Script
             id="gtag-init"
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
             __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${gtag.GA_TRACKING_ID}', {
+                gtag('config', 'G-KPZSDZ0B89', {
                 page_path: window.location.pathname,
                 });
             `,

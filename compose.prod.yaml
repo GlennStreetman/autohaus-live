@@ -18,16 +18,12 @@ services:
             - ./styles:/app/styles
             - ./.env:/app/.env 
         command: "npm run server"
+        restart: always
         deploy:
             resources:
                 limits:
                     cpus: '1.25'
                     memory: 2000m
-            restart_policy:
-                condition: on-failure
-                delay: 5s
-                max_attempts: 3
-                window: 120s
 networks:
     default:
         external: true

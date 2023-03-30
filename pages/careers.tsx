@@ -314,10 +314,10 @@ function Careers(p: props) {
                                 <LabeledInput autocomplete="postal-code" fieldType="text" id="zip-id" label="Zip Code" value={zip} onClickCallback={setZip} />
                             </div>
                             <div className="col-span-12 border-2 p-2 relative">
-                                <label className="absolute -top-4 left-4 z-2  text-accentBlue bg-primary">Cover Letter:</label>
+                                <label className="absolute -top-4 left-4 z-2  text-accentBlue">Cover Letter:</label>
                                 <textarea
                                     rows={6}
-                                    className="bg-primary outline-none w-full"
+                                    className="outline-none w-full"
                                     value={description}
                                     onChange={(e) => {
                                         e.preventDefault();
@@ -366,7 +366,7 @@ function Careers(p: props) {
                             <div className={big}>
                                 <div className="flex justify-center">
                                     <button
-                                        className="h-[78px] border-2 p-2 rounded-md bg-secondary shadow-sm shadow-slate-600 hover:bg-weak hover:border-black hover:text-accent active:bg-strong text-2x font-bold"
+                                        className="h-[78px] border-2 p-2 rounded-md shadow-sm shadow-slate-600 hover:bg-weak hover:border-black hover:text-accent active:bg-strong text-2x font-bold"
                                         onClick={processRequest}
                                     >
                                         Submit Application

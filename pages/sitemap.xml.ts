@@ -4,8 +4,6 @@ import { getAllServices } from "../strapiAPI/getAllServices"
 
 function generateSiteMap(links) {
 
-  console.log(links, console.log(process.env.NEXT_PUBLIC_URL))
-
   const mapLinks = links.map((el) => {
       return `
     <url>

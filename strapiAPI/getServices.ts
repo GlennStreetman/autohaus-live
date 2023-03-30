@@ -212,7 +212,7 @@ export const getServices = async function():Promise<ServicePayload[]>{
       return acc
 
     },[])
-    console.log
+    // console.log
     return trimPackage
 }
 
